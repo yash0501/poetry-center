@@ -1,0 +1,10 @@
+<%- include("partials/header") %>
+<h1>Poems Page</h1>
+<% poems.forEach((poem)=>{ %>
+<div class="poem">
+    <h3><%= poem.title %></h3>
+    <p><%= poem.poem %></p>
+    <p><%= poem.author %></p>
+</div>
+<% }) %>
+<%- include("partials/footer") %>
